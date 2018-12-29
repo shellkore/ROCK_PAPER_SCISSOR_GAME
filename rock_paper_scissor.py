@@ -1,14 +1,19 @@
 #A SIMPLE ROCK PAPER SCISSOR GAME IN PYTHON
 import random
+import os
 def main():
-    print("WELCOME TO ROCK PAPER AND SCISSORS GAME\n")
+    os.system('cls' if os.name=='nt' else 'clear')
+    print("WELCOME TO ROCK PAPER AND SCISSOR GAME\n")
+    print("****************RULES*******************\n")
     print("Paper vs Rock -> ROCK WINS\n")
     print("Paper vs Scissors-> SCISSORS WINS\n")
     print("Rock vs Scissors -> ROCK WINS\n")
+    input("PRESS ENTER KEY TO PROCEED")
     while True:
-        print("GAME MODES\n 1.PLAYER VS PLAYER\n 2.PLAYER VS COMPUTER")
+        os.system('cls' if os.name=='nt' else 'clear')
+        print("\t\t\tGAME MODES\n 1.PLAYER VS PLAYER\t 2.PLAYER VS COMPUTER")
         choice=int(input("Enter your Choice(1-2):"))
-        while(choice<=0 or choice>2):
+        while(choice !=1 and choice !=2):
             print("INVALID CHOICE\nENTER AGAIN:")
             choice=int(input())
         if(choice==1):
@@ -20,7 +25,7 @@ def main():
         if(choice==1):
             print("Enter player 2 name:")
             play_2=input()
-        print(play_1, " PLAYS\n")
+        print("\n"+play_1, "PLAYS\n")
         movp1=int(input("1.ROCK\n2.SCISSORS\n3.PAPER\nENTER YOUR PICK:"))
         print(play_1, "PICKS:")
         if(movp1==1):
@@ -30,7 +35,10 @@ def main():
         else:
             print("PAPER")
         if(choice==1):
-            print(play_2 ," PLAYS\n")
+            print("PRESS ENTER FOR",play_2+"'s TURN")
+            input()
+            os.system('cls' if os.name=='nt' else 'clear')
+            print("\n"+play_2 ,"PLAYS\n")
             movp2=int(input("1.ROCK\n2.SCISSORS\n3.PAPER \nENTER YOUR PICK:"))
             print(play_2, " PICKS:")
             if(movp2==1):
@@ -54,6 +62,7 @@ def main():
             else:
                 print("MATCH DRAW\n")
         else:
+            #generating random integer between 1 and 3(inclusive)
             movc=random.randint(1,3)
             print("COMPUTER PICKS:")
             if(movc==1):
