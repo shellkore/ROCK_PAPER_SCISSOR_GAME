@@ -1,12 +1,12 @@
-#ROCK_PAPER_SCISSOR_GAME
+# ROCK_PAPER_SCISSOR_GAME
 
-##FEATURES
+## FEATURES
 It is a simple game implemented in Python
 It has two mode:
 1.PLAYER VS PLAYER MODE
 2.PLAYER VS COMPUTER MODE
 
-##RUNNING
+## RUNNING
 **open terminal where you want to clone repository**
 
 Clone the repository
