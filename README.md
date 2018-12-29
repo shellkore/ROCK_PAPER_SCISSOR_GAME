@@ -9,13 +9,16 @@ It has two mode:
 ## RUNNING
 **open terminal where you want to clone repository**
 
-Clone the repository
-`git clone https://github.com/SabaKarimi/ROCK_PAPER_SCISSOR_GAME.git`
+Clone the repository:
 
-Enter the repository
-`cd ROCK_PAPER_SCISSOR_GAME`
+` git clone https://github.com/SabaKarimi/ROCK_PAPER_SCISSOR_GAME.git `
 
-Run the game
-`python rock_paper_scissor.py`
+Enter the repository:
+
+` cd ROCK_PAPER_SCISSOR_GAME `
+
+Run the game:
+
+` python rock_paper_scissor.py `
 
 >your contribution would be appreciated
